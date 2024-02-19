@@ -116,6 +116,10 @@ button:disabled {
         font-size: 50px;
     }
 
+    .container {
+        justify-content: center;
+    }
+
     .container__botao {
         font-size: 16px;
     }
@@ -130,11 +134,20 @@ button:disabled {
     }
 
     .container__conteudo {
-        display: block;
-        position: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
     }
 
     .container__informacoes {
-        padding: 1rem
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        text-align: center;
     }
 }
